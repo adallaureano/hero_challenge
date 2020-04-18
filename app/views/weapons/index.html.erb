@@ -1,0 +1,21 @@
+<h1>Listing Weapons</h1>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Level</th>
+    <th></th>
+  </tr>
+  <% @weapons.each do |weapon| %>
+    <tr>
+      <p><%=weapon.name%></p>
+      <p><%=weapon.descripton%></p>
+      <p><%=weapon.power_base%></p>
+      <p><%=weapon.power_step%></p>
+      <p><%=weapon.level%></p>   
+      <td><%= link_to 'Show', weapon_path(weapon) %></td>
+    </tr>
+  <% end %>
+</table>
+
+

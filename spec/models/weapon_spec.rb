@@ -36,3 +36,4 @@ RSpec.describe Weapon, type: :model do
     expect(weapon.title).to eq("#{weapon.name} ##{weapon.level}")
   end
 end
+ 
